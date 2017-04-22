@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/droppable.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript">
+
+	 	var valueSpan,slider;
+		$(document).ready(function(){
+			slider = $("#slider");
+			valueSpan = $("#span")
+			// slider.slider({
+			// 	change:function(event,ui){
+			// 		valueSpan.text(slider.slider("option","value"));
+			// 	}
+			// });
+			slider.slider({
+				slide:function(event,ui){
+					valueSpan.text(slider.slider("option","value"));
+				}
+			});
+		});
+
+
+
+
+	</script>
+</head>
+<body>
+	<span id="span">0</span>
+	<div id="slider"></div>
+</body>
+</html>

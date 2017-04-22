@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/droppable.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#input").spinner();
+			$("input").spinner("value","10");
+			$("#btn").on("click",function(){
+				alert($("#input").spinner("value"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<input id="input" type="text" name="">
+	<button id="btn">getValue</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>欢迎</h1>
+        </div>
+        <div role="main">
+            <a href="#page2" data-transition="flip">跳转到第二个页面</a>
+            <a href="#page2" data-rel="dialog">跳转到第二个页面</a>
+        </div>
+        <div data-role="footer">
+        <h4>底部</h4>
+        </div>
+    </div> 
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>欢迎</h1>
+        </div>
+        <div role="main">
+            <a href="#page1" data-transition="flip">跳转到第一个页面</a>
+        </div>
+        <div data-role="footer">
+        <h4>底部</h4>
+        </div> 
+    </div>
+    
+</body>
+</html>

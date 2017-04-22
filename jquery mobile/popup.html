@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navbar</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<a href="#pp" class="ui-btn" data-rel="popup">弹出窗口</a>
+	<div data-role="popup" id="pp">
+		<p>这是一个傻逼</p>
+	</div>
+
+	<a href="#pop" data-rel="popup" data-position-to="window" data-transition="fade">
+	<img src="images/me.jpg" class="pupphoto" style="width:15%">
+	</a>
+
+	<div data-role="popup" id="pop" >
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+		<img src="images/me.jpg" class="popphoto" style="max-height:502px;">
+	</div>
+</body>
+
+</html>

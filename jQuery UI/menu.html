@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+	<!-- <script type="text/javascript" src="js/droppable.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+	<style type="text/css">
+		/*#menu{
+			width: 60px;
+		}*/
+		.ui-menu:after{
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0
+			height: 0; 
+		}
+
+		.ui-menu .ui-menu-item{
+			display: block;
+			float: left;
+			margin: 0;
+			padding: 10px;
+			width: auto;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu").menu({position:{at:"left bottom"}});
+		});
+	</script>
+</head>
+<body>
+	<ul id="menu">
+		<li>
+			<a href="#">java</a>
+			<ul>
+				<li><a href="#">java ee</a></li>
+				<li><a href="#">java se</a></li>
+				<li><a href="#">java me</a></li>
+			</ul>
+		</li>
+		<li>css</li>
+		<li>html</li>
+		<li>javascript</li>
+	</ul>
+</body>
+</html>
